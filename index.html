@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> database </title>
+
+    
+
+
+  </head>
+  
+<style>
+    body{
+        margin:0;
+        padding:0;
+        font-family: Arial;
+    
+    }
+    
+    table,th,td{
+        width:80px;
+        margin:auto;
+        font-size:15px;
+        padding:20px;
+        text-align:center;
+        border:2px solid #000;
+    }
+</style>
+    <body>
+        <script type="text/javascript" src="./index.js"></script>
+<table id="example" class="table table-striped" style="width:100%">
+        <thead>
+
+            <tr>
+                <td>
+                    <form autocomplete="off" onsubmit="onFormSubmit()">
+                        <div>
+                            <label for="id">id</label>
+                            <input type="number" name="id" id="id">
+                        </div>
+                        <div>
+                            <label for="name"> Name</label>
+                            <input type="text" name="name" id="name">
+                        </div>
+                        <div>
+                            <label for="position">position</label>
+                            <input type="text" name="position" id="position">
+                        </div>
+                        <div>
+                            <label for="office">office</label>
+                            <input type="text" name="office" id="office">
+                        </div>
+                        <div>
+                            <label for="age">age</label>
+                            <input type="number" name="age" id="age">
+                        </div>
+                        <div>
+                            <label for="start date "> start date</label>
+                            <input type="number" name="start date" id="start date">
+                        </div>
+                        <div>
+                            <label for="salery">salery</label>
+                            <input type="number" name="salery" id="salery">
+                        </div>
+                        <div>
+                            <label for="gender">gender</label>
+                            <input type="text" name="gender" id="gender">
+                        </div>
+                        <div>
+                            <label for="mobile no.">mobile no.</label>
+                            <input type="number" name="mobile no." id="mobile no.">
+                        </div>
+                        <div>
+                            <label for="address">address</label>
+                            <input type="text" name="address" id="address">
+                        </div>
+    
+                        <div class="form_action--button">
+                            <input type="submit" value="Submit">
+                            <input type="reset" value="Reset">
+                        </div>
+                    </form>
+
+                    </tr>
+            <tr>
+                <th >ID</th>
+                <th >Name</th>
+                <th  >Position</th>
+                <th  >Office</th>
+                <th >Age</th>
+                <th >Start date</th>
+                <th >Salary</th>
+                <th >Gender</th>
+                <th >Mobile no. </th>
+                <th >Address</th>
+
+                
+
+                
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                <td>1</td>
+                <td>Raju</td>
+                <td>CEO</td>
+                <td>Pune</td>
+                <td>61</td>
+                <td>2023-04-25</td>
+                <td>320,800</td>
+                <td>male</td>
+                <td>8965474333</td>
+                <td>pune</td>
+
+                
+                
+            </tr>
+            <tr><td>2</td>
+                <td>Shaam </td>
+                <td>Analyst</td>
+                <td>pune</td>
+                <td>63</td>
+                <td>2022-07-25</td>
+                <td>170,750</td>
+                <td>male</td>
+                <td>999363636</td>
+                <td>pune</td>
+            
+                
+            </tr>
+            <tr>
+                <td>3</td>
+               <td>Ashton </td>
+               <td>developer</td>
+               <td>pune</td>
+               <td>66</td>
+               <td>2017-01-12</td>
+               <td>170,750</td>
+               <td>male</td>
+               <td>999363636</td>
+               <td>pune</td>
+           </tr>
+           <tr>
+             <td>4</td>
+               <td>shaharukh</td>
+               <td>developer</td>
+               <td>pune</td>
+               <td>22</td>
+               <td>2023-03-29</td>
+               <td>433,060</td>
+               <td>male</td>
+               <td>8474464638</td>
+               <td>pune</td>
+           </tr>
+           <tr>
+            <td>5</td>
+               <td>Ari </td>
+               <td>Accountant</td>
+               <td>mumbai</td>
+               <td>33</td>
+               <td>2020-1-28</td>
+               <td>162,700</td>
+               <td>female</td>
+               <td>9983647344</td>
+               <td>mumbai</td>
+           </tr>
+           <tr>
+            <td>6</td>
+               <td>salman</td>
+               <td>Integration Specialist</td>
+               <td>pune</td>
+               <td>61</td>
+               <td>2010-12-02</td>
+               <td>372,000</td>
+               <td>male</td>
+               <td>87556354374</td>
+               <td>pune</td>
+           </tr>
+           <tr>
+
+            <td>7</td>
+               <td>dipika</td>
+               <td>Sales Assistant</td>
+               <td>pune</td>
+               <td>29</td>
+               <td>2019-08-06</td>
+               <td>137,500</td>
+               <td>female</td>
+               <td>7433476347</td>
+               <td>pune</td>
+           </tr>
+           <tr>
+            <td>8</td>
+               <td>maya</td>
+               <td>Integration Specialist</td>
+               <td>pune</td>
+               <td>35</td>
+               <td>2016-10-14</td>
+               <td>327,900</td>
+               <td>female</td>
+               <td>7433476347</td>
+               <td>pune</td>
+           </tr>
+           <tr>
+            <td>9</td>
+               <td>radha</td>
+               <td>Javascript Developer</td>
+               <td>pune </td>
+               <td>39</td>
+               <td>2014-09-15</td>
+               <td>205,500</td>
+               <td>female</td>
+               <td>7433476347</td>
+               <td>pune</td>
+           </tr>
+           <tr>
+            <td>10</td>
+               <td>Sona</td>
+               <td>Software Engineer</td>
+               <td>pune</td>
+               <td>23</td>
+               <td>2022-12-13</td>
+               <td>103,600</td>
+               <td>female</td>
+               <td>743347557</td>
+               <td>pune</td>
+           </tr>
+           <tr>
+            <td>11</td>
+               <td>jiya</td>
+               <td>Office Manager</td>
+               <td>pune</td>
+               <td>30</td>
+               <td>2018-12-19</td>
+               <td>90,560</td>
+               <td>female</td>
+               <td>743349957</td>
+               <td>pune</td>
+           </tr>
+
+               
+           <tr>
+
+            <td>12</td>
+               <td>diya</td>
+               <td> Leader</td>
+               <td>pune</td>
+               <td>22</td>
+               <td>2020-03-03</td>
+               <td>342,000</td>
+               <td>female</td>
+               <td>743349957</td>
+               <td>pune</td>
+           </tr>
+           <tr>
+            <td>13</td>
+               <td>rani</td>
+               <td> Director</td>
+               <td>pune</td>
+               <td>36</td>
+               <td>2016-10-16</td>
+               <td>470,600</td>
+               <td>female</td>
+               <td>773349957</td>
+               <td>pune</td>
+
+           </tr>
+           <tr>
+            <td>14</td>
+               <td>karina</td>
+               <td>Senior Marketing Designer</td>
+               <td>pune</td>
+               <td>45</td>
+               <td>2012-12-18</td>
+               <td>313,500</td>
+               <td>female</td>
+               <td>773349957</td>
+               <td>pune</td>
+           </tr>
+           <tr>
+            <td>15</td>
+               <td>mariya</td>
+               <td>Director</td>
+               <td>pune</td>
+               <td>22</td>
+               <td>2020-03-17</td>
+               <td>385,750</td>
+               <td>female</td>
+               <td>773349957</td>
+               <td>pune</td>
+
+           </tr>
+           <tr>
+            <td>16</td>
+               <td>teja</td>
+               <td>Marketing Designer</td>
+               <td>mumbai</td>
+               <td>34</td>
+               <td>2018-11-27</td>
+               <td>198,500</td>
+               <td>female</td>
+               <td>778849957</td>
+               <td>mumbai</td>
+           </tr>
+           <tr>
+            <td>17</td>
+               <td>siya</td>
+               <td>acountant</td>
+               <td>pune</td>
+               <td>39</td>
+               <td>2022 -06-09</td>
+               <td>725,000</td>
+               <td>female</td>
+              
+               <td>778849957</td>
+               <td>pune</td>
+           </tr>
+           <tr>
+            <td>18</td>
+               <td>rajeshwari</td>
+               <td>Systems Administrator</td>
+               <td>pune</td>
+               <td>33</td>
+               <td>2022-04-10</td>
+               <td>237,500</td>
+               <td>female</td>
+               <td>778849957</td>
+               <td>pune</td>
+           </tr>
+           <tr>
+            <td>19</td>
+               <td>radha</td>
+               <td>Software Engineer</td>
+               <td>mumbai</td>
+               <td>34</td>
+               <td>2015-10-13</td>
+               <td>132,000</td>
+               <td>female</td>
+               <td>9836242336</td>
+               <td>mumbai</td>
+           </tr>
+           <tr>
+            <td>20</td>
+               <td>rakesh</td>
+               <td> Leader</td>
+               <td>pune</td>
+               <td>35</td>
+               <td>2017-09-26</td>
+               <td>217,500</td>
+               <td>male</td>
+               <td>7454875378</td>
+               <td>pune</td>
+           </tr>
+           <tr>
+            <td>21</td>
+               <td>ramesh</td>
+               <td>Development Lead</td>
+               <td>pune</td>
+               <td>30</td>
+               <td>2020-09-03</td>
+               <td>345,000</td>
+               <td>male</td>
+               <td>7454875378</td>
+               <td>pune</td>
+           </tr>
+           <tr>
+            <td>22</td>
+               <td>Yuvi</td>
+               <td>Chief Marketing Officer (CMO)</td>
+               <td>Pune</td>
+               <td>40</td>
+               <td>2014-06-25</td>
+               <td>675,000</td>
+               <td>male</td>
+               <td>7454875378</td>
+               <td>pune</td>
+           </tr>
+           <tr>
+            <td>23</td>
+               <td>ramesh</td>
+               <td>Pre-Sales Support</td>
+               <td>pune</td>
+               <td>21</td>
+               <td>2021-12-12</td>
+               <td>106,450</td>
+               <td>male</td>
+               <td>7454875378</td>
+               <td>pune</td>
+           </tr>
+           <tr>
+            <td>24</td>
+               <td>arjun</td>
+               <td>Sales Assistant</td>
+               <td>pune</td>
+               <td>23</td>
+               <td>2020-09-20</td>
+               <td>85,600</td>
+               <td>male</td>
+               <td>7454875378</td>
+               <td>pune</td>
+           </tr>
+           <tr>
+            <td>25</td>
+               <td>messi</td>
+               <td>Chief Executive Officer (CEO)</td>
+               <td>pune</td>
+               <td>37</td>
+               <td>2016-10-09</td>
+               <td>1,200,000</td>
+               <td>male</td>
+               <td>7454875378</td>
+               <td>pune</td>
+           </tr>
+           <tr>
+            <td>26</td>
+               <td>ronaldo</td>
+               <td>Developer</td>
+               <td>pune</td>
+               <td>40</td>
+               <td>2015-12-22</td>
+               <td>92,575</td>
+               <td>male</td>
+               <td>7454875378</td>
+               <td>pune</td>
+
+           </tr>
+           <tr>
+            <td>27</td>
+               <td>kohli</td>
+               <td>Regional Director</td>
+               <td>pune</td>
+               <td>28</td>
+               <td>2022-11-14</td>
+               <td>357,650</td>
+               <td>male</td>
+               <td>7454875378</td>
+               <td>pune</td>
+           </tr>
+           <tr>
+            <td>28</td>
+               <td>Dhoni</td>
+               <td>Software Engineer</td>
+               <td>pune</td>
+               <td>28</td>
+               <td>2022-06-07</td>
+               <td>206,850</td>
+               <td>male</td>
+               <td>7454875378</td>
+               <td>pune</td>
+           </tr>
+           <tr>
+            <td>29</td>
+               <td>ganguly</td>
+               <td>Chief Operating Officer (COO)</td>
+               <td>pune</td>
+               <td>48</td>
+               <td>2011-03-11</td>
+               <td>850,000</td>
+               <td>male</td>
+               <td>888327425</td>
+                <td> pune</td>
+          </tr>
+          <tr>
+            <td>30</td>
+              <td>sachin</td>
+              <td>Marketing</td>
+              <td>pune</td>
+              <td>20</td>
+              <td>2017-08-14</td>
+              <td>163,000</td>
+              <td>male</td>
+              <td>645375648</td>
+              <td>pune</td>
+          </tr>
+          <tr>
+            <td>31</td>
+              <td>rakesh</td>
+              <td>Integration Specialist</td>
+              <td>mumbai</td>
+              <td>37</td>
+              <td>2015-06-02</td>
+              <td>95,400</td>
+              <td>male</td>
+              <td>876743486</td>
+              <td>mumbai</td>
+          </tr>
+          <tr>
+            <td>32</td>
+              <td>rani</td>
+              <td>Developer</td>
+              <td>mimbai</td>
+              <td>53</td>
+              <td>2009-10-22</td>
+              <td>114,500</td>
+              <td>female</td>
+              <td>7865738657</td>
+              <td>mumbai</td>
+          </tr>
+          <tr>
+            <td>33</td>
+              <td>tina</td>
+              <td>Technical Author</td>
+              <td>mumbai</td>
+              <td>27</td>
+              <td>2022-05-07</td>
+              <td>145,000</td>
+              <td>female</td>
+              <td>7865738657</td>
+              <td>mumbai</td>
+          </tr>
+          <tr>
+            <td>34</td>
+              <td>manisha</td>
+              <td>Team Leader</td>
+              <td>mumbai</td>
+              <td>22</td>
+              <td>2022-10-26</td>
+               <td>235,500</td>
+               <td>female</td>
+               <td>7865738657</td>
+               <td>mumbai</td>
+           </tr>
+           <tr>
+            <td>35</td>
+               <td>shobha</td>
+               <td>-Sales support</td>
+               <td>mumbai</td>
+               <td>46</td>
+               <td>2015-03-09</td>
+               <td>324,050</td>
+               <td>female</td>
+               <td>7865738657</td>
+               <td>mumbai</td>
+           </tr>
+           <tr>
+            <td>36</td>
+               <td>raksha</td>
+               <td>Marketing Designer</td>
+               <td>mumbai</td>
+               <td>47</td>
+               <td>2010-12-09</td>
+               <td>85,675</td>
+               <td>female</td>
+               <td>7865738657</td>
+               <td>mumbai</td>
+
+           </tr>
+           <tr>
+            <td>37</td>
+               <td>ranita</td>
+               <td>Office Manager</td>
+               <td>mumbai</td>
+               <td>51</td>
+               <td>2008-12-16</td>
+               <td>164,500</td>
+               <td>female</td>
+               <td>7865738657</td>
+               <td>mumbai</td>
+           </tr>
+           <tr>
+            <td>38</td>
+               <td>pushpa</td>
+               <td>Secretary</td>
+               <td>mumbai</td>
+               <td>41</td>
+               <td>2010-02-12</td>
+               <td>109,850</td>
+               <td>female</td>
+               <td>7865738657</td>
+               <td>mumbai</td>
+           </tr>
+           <tr>
+            <td>39</td>
+               <td>kalpna</td>
+               <td>Financial Controller</td>
+               <td>mumbai</td>
+               <td>42</td>
+               <td>2009-02-14</td>
+               <td>452,500</td>
+               <td>female</td>
+               <td>7865738657</td>
+               <td>mumbai</td>
+           </tr>
+           <tr>
+            <td>40</td>
+               <td>lalita</td>
+               <td>Office Manager</td>
+               <td>mumbai</td>
+               <td>37</td>
+               <td>2008-12-11</td>
+               <td>136,200</td>
+               <td>female</td>
+               <td>7865738657</td>
+               <td>mumbai</td>
+           </tr>
+           <tr>
+            <td>41</td>
+               <td>Jack sparrow</td>
+               <td>Director</td>
+               <td>mumbai</td>
+               <td>55</td>
+               <td>2008-09-26</td>
+               <td>645,750</td>
+               <td>male</td>
+               <td>7865738657</td>
+               <td>mumbai</td>
+           </tr>
+           <tr>
+            <td>42</td>
+               <td>bumrah</td>
+               <td>Support Engineer</td>
+               <td>mumbai</td>
+               <td>34</td>
+               <td>2017-02-03</td>
+               <td>234,500</td>
+               <td>male</td>
+               <td>7865738657</td>
+               <td>mumbai</td>
+           </tr>
+           <tr>
+            <td>43</td>
+               <td>Bruno marse</td>
+               <td>Software Engineer</td>
+               <td>mumbai</td>
+               <td>38</td>
+               <td>2016-05-03</td>
+               <td>163,500</td>
+               <td>male</td>
+               <td>7865738657</td>
+               <td>mumbai</td>
+           </tr>
+           <tr>
+            <td>44</td>
+               <td>raju</td>
+               <td>Support Engineer</td>
+               <td>mumbai</td>
+               <td>37</td>
+               <td>2014-08-19</td>
+               <td>139,575</td>
+               <td>male</td>
+               <td>7865738657</td>
+               <td>mumbai</td>
+           </tr>
+           <tr>
+            <td>45</td>
+               <td>Thor </td>
+               <td>Developer</td>
+               <td>pune</td>
+               <td>44</td>
+               <td>2013-08-11</td>
+               <td>98,540</td>
+               <td>male</td>
+               <td>7865738657</td>
+               <td>pune</td>
+           </tr>
+           <tr>
+            <td>46</td>
+               <td>hulk</td>
+               <td>Support Engineer</td>
+               <td>pune</td>
+               <td>47</td>
+               <td>2009-07-07</td>
+               <td>87,500</td>
+               <td>male</td>
+               <td>7865738657</td>
+               <td>pune</td>
+           </tr>
+           <tr>
+            <td>47</td>
+               <td>stark</td>
+               <td>Data Coordinator</td>
+               <td>pune</td>
+               <td>52</td>
+               <td>2012-04-09</td>
+               <td>138,575</td>
+               <td>male</td>
+               <td>7865738657</td>
+               <td>pune</td>
+           </tr>
+           <tr>
+            <td>47</td>
+               <td>ramesh</td>
+               <td>Software Engineer</td>
+               <td>pune</td>
+               <td>33</td>
+               <td>2016-01-04</td>
+               <td>125,250</td>
+               <td>male</td>
+               <td>7865738657</td>
+               <td>pune</td>
+           </tr>
+           <tr>
+            <td>49</td>
+               <td>suresh</td>
+               <td>Software Engineer</td>
+               <td>pune</td>
+               <td>56</td>
+               <td>2016-06-01</td>
+               <td>115,000</td>
+               <td>male</td>
+               <td>7865738657</td>
+               <td>pune</td>
+           </tr>
+           <tr>
+            <td>50</td>
+           <td>yash</td>
+               <td>Junior Javascript Developer</td>
+               <td>pune</td>
+               <td>43</td>
+               <td>2016-02-01</td>
+               <td>75,650</td>
+               <td>male</td>
+               <td>7865738657</td>
+               <td>pune</td>
+           </tr>
+           </tbody>
+           
+        
+            </body>
+            
+          </html>
